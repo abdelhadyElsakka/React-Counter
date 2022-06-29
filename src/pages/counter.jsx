@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
-import Decrease from './decrease';
-import Increase from './increase'; 
+import Decrease from '../Compnents/decrease';
+import Increase from '../Compnents/increase'; 
 function Counter() {
     const [counter, setCounter] = useState(0);
  
