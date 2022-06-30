@@ -4,12 +4,12 @@ import Home from './pages/home'
 import Counter from './pages/counter'
 import Shop from './pages/shop'
 import Product from './pages/shop/product'
+import Todo from './pages/todo/Todo'
 
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 function App() { 
@@ -21,6 +21,7 @@ function App() {
       <Route path='/Shop' element={< Shop />}/>
       <Route path='Counter/' element={< Counter />}/>
       <Route path='/Shop/:id' element={< Product />}/>
+      <Route path='/ToDO' element={< Todo />}/>
     </Routes>
     </Router>
      
