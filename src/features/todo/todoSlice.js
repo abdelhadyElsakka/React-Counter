@@ -25,7 +25,7 @@ export const tasksSlice = createSlice({
       state.tasks.push(action.payload);
     },
     deleteTask: (state,action) => {
-      state.todos = state.todos.filter(
+      state.tasks = state.tasks.filter(
         (item, index) => index !== action.payload
       );
     },

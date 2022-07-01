@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TodoForm from "../../Compnents/todo/TodoForm";
 import TodoList from "../../Compnents/todo/TodoList";
 import { useSelector,useDispatch } from "react-redux";
@@ -7,7 +6,7 @@ import './Todo.css';
 function Todo() {
   
 
-  const todos = useSelector(state=>state.tasks)
+  const todos = useSelector(state=>state.todo.tasks)
   const dispatch = useDispatch();
 
   const onAddTodo = (task) => {
