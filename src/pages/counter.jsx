@@ -1,28 +1,18 @@
 import { React, useState } from 'react'
 import Decrease from '../Compnents/decrease';
 import Increase from '../Compnents/increase'; 
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment } from '../features/counter/counterSlice'
 function Counter() {
-    const [counter, setCounter] = useState(0);
- 
-
-    const increase = () => {
-      setCounter(count => count+1);
-    };
-   
-  
-    const decrease = () => {
-      setCounter(count => count-1);
-    };
-   
-    
-   
+  const count = useSelector((state) => state.counter.value)
+  const dispatch = useDispatch()
     return (
       <div className="counter">
         <h1>Counter</h1>
-        <span className="counter__output">{counter}</span>
+        <span className="counter__output">{count}</span>
         <div className="btn__container">
-          <Increase increase={increase}/>
-          <Decrease decrease={decrease}/>
+          <Increase increase={() => dispatch(increment())}/>
+          <Decrease decrease={() => dispatch(decrement())}/>
         </div>
       </div>
     );
