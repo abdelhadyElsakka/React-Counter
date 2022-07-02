@@ -5,6 +5,8 @@ import Counter from './pages/counter'
 import Shop from './pages/shop'
 import Product from './pages/shop/product'
 import Todo from './pages/todo/Todo'
+import Register from './pages/Register/register'
+
 
 import {
   BrowserRouter as Router,
@@ -22,6 +24,7 @@ function App() {
       <Route path='Counter/' element={< Counter />}/>
       <Route path='/Shop/:id' element={< Product />}/>
       <Route path='/ToDO' element={< Todo />}/>
+      <Route path='/Register' element={< Register />}/>
     </Routes>
     </Router>
      
