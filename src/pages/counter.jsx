@@ -7,10 +7,10 @@ function Counter() {
   const count = useSelector((state) => state.counter.value)
   const dispatch = useDispatch()
     return (
-      <div className="counter">
-        <h1>Counter</h1>
-        <span className="counter__output">{count}</span>
-        <div className="btn__container">
+      <div className="counter bg-black mt-1 p-5 text-white" >
+        <h1 className='p-5'>Support Me</h1>
+        <span className="counter__output p-5">{count}$</span>
+        <div className="btn__container p-2">
           <Increase increase={() => dispatch(increment())}/>
           <Decrease decrease={() => dispatch(decrement())}/>
         </div>

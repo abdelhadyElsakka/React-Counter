@@ -34,8 +34,8 @@ export default function Register() {
     const onSubmit = data => console.log(data);
 
     return (
-        
-        <div className="container w-50 mt-5 border border-primary rounded p-3">
+        <div className="bg-black p-5">
+        <div className="container w-50 mt-5 border border-primary rounded p-5 mb-3 text-light">
         <h1 className="text-center">Register</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
             <label className="d-block">Name</label>
@@ -56,6 +56,7 @@ export default function Register() {
                 </div>
             <label className="d-block">Gender</label>    
             <Controller
+                className="text-secondary"
                 name="gender"
                 control={control}
                 render={({ field }) => <Select
@@ -97,6 +98,7 @@ export default function Register() {
                 </div>
             <input className="w-100 btn btn-primary mt-4" type="submit" />
         </form>
+        </div>
         </div>
     );
 }

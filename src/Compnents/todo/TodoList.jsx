@@ -5,15 +5,16 @@ const TodoList = ({ todos,deleteTodo }) => {
       todos.map((todo, i) => {
         return (
           <ul key={i}>
-            <li className="border d-flex">
-            <div className="text">
-              <p>Title : {todo.title}</p>
-              <p>Content : {todo.content}</p>
+            <li className=" d-flex text-left">
+            <div className="text me-auto ">
+              <p>{todo.title}</p>
+              <p>{todo.content}</p>
             </div>
             <div>
-              <button onClick={()=>deleteTodo(i)}>x</button> 
+              <a onClick={()=>deleteTodo(i)}><h1>X</h1></a> 
             </div>
             </li>
+            <hr></hr>
           </ul>
         );
       })

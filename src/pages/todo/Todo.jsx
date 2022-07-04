@@ -18,9 +18,12 @@ const onDeleteTodo = (index) => {
 }
 
   return (
-    <div className="text-center py-2 todo-wrapper container">
-      <TodoForm addTodo={onAddTodo} />
-      <TodoList todos={todos} deleteTodo={onDeleteTodo} />
+    <div className="bg-black pb-5 pt-3 text-light">
+    <div className="text-center py-2 todo-wrapper container ">
+      <TodoForm  addTodo={onAddTodo} />
+      <TodoList  todos={todos} deleteTodo={onDeleteTodo} />
+    </div>
+    
     </div>
   );
 }

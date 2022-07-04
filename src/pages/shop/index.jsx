@@ -21,7 +21,8 @@ const Shop = () => {
 
   
   return (
-    <div className='container row m-auto'>
+    <div className='bg-black'>
+    <div className='container row mx-auto mt-5 '>
     {
         products.map((item,index)=>{
             return(
@@ -41,6 +42,7 @@ const Shop = () => {
     }
     
     </div>
+  </div>
   )
 }
 

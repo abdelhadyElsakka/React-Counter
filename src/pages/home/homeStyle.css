@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+  }
+  .bg {
+    background-image: url("../../assets/bg-image.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .aboutText{
+    padding-top: 15rem;
+    padding-left: 15rem
+  }
